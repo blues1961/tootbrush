@@ -26,8 +26,9 @@ precision=0.25; //espace entre le couvercle et la base
       }
  
         
-      coverX = lo+3*mur+2*precision;
+      coverX = lo+3*mur+2*precision+5;
       coverY = la+3*mur+2*precision;
+      
       difference(){
       union(){
         translate([coverX,0,0]) 
