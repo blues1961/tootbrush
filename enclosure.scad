@@ -2,9 +2,6 @@
 Auteur:    Sylvain Arbour
 Creation:  2020-06-17
 */
-/////////////////////////////////////////////////
-//  haut de l'enclosure
-/////////////////////////////////////////////////
 
 module enclosure_haut(longueur,largeur,hauteur,epcote,epbas,ephaut,precision,encPct){
     lo = longueur+2*epcote+precision;
@@ -14,7 +11,7 @@ module enclosure_haut(longueur,largeur,hauteur,epcote,epbas,ephaut,precision,enc
     
     difference(){
        cube(lo,la,ha,offset);
-       translate([0,0,epbas]) cube(lo-offset,la-offset,ha);
+       translate([0,0,epbas]) cube(lo-offset,la-offset,ha,offset);
     }
 }
 
@@ -31,7 +28,7 @@ module enclosure_bas(longueur,largeur,hauteur,epcote,epbas,ephaut,precision,encP
       union(){
         cube(lo,la,ha,offset);
         cube(lo,la,ha,0);
-        cube(lo,la,hauteur*(1-encPct)+epbas,2*offset+precision/2);
+        cube(lo+precision,la+precision,hauteur*(1-encPct)+epbas,offset);
       }
       translate([0,0,epbas])cube(lo,la,ha,0);
     }
