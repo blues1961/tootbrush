@@ -17,7 +17,7 @@ precision=1      //espace entre l'intérieur de l'enclosure du haut et l'extéri
 # paramètres spécifiques pour l'enclosure de la brosse à dents
 
 ouverture=8;     // ouverture pour le manche de la brosse
-texte="Étienne"  // personnalisation de l'enclosure de la brosse a dent
+texte="Toothbrush"  // personnalisation de l'enclosure de la brosse a dent
 
 
 Le module enclosure.scad doit être déplacé dans la  librairie d'OpenSCAD.
