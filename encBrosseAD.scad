@@ -1,4 +1,11 @@
 use <enclosure.scad>
+//////////////////////////////////////
+// Auteur: Sylvain Arbour
+// Date: 2020-06-17
+//////////////////////////////////////
+
+// enclosure de brosse a dent
+
 longueur=35; //longueur interieure
 largeur=18;   //largeur interieure
 hauteur=18;   //hauteur interieure
