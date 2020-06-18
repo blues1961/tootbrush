@@ -1,17 +1,22 @@
 # tootbrush
 
-#interieur de la boite
+# interieur de la boite
 
-longueur=35;     //longueur 
-largeur=18;      //largeur 
-hauteur=18;      //hauteur
+# longueur=35;     //longueur 
+# largeur=18;      //largeur 
+# hauteur=18;      //hauteur
 
-epcote=3;        // epaisseur des cotes
-ephaut=5;        //epaisseur dessus boite
-epbas=5;         // epaisseur dessous boite
+# epcote=3;        // epaisseur des cotes
+# ephaut=3;        //epaisseur dessus boite
+# epbas=3;         // epaisseur dessous boite
 
-tolerance=0.8    //espace entre couvercle et receptacle 
+# precision=1      //espace entre interieur enclosure du haut et exterieur enclosure du bas 
 
-ouverture=8;     // ouverture manche de brosse
+# ouverture=8;     // ouverture manche de brosse
 
-texte="Charles"  // personnalisation
+# texte="Charles"  // personnalisation de l'enclosure de la brosse a dent
+
+# placer enclosure.scad dans la librairie de openSCAD
+
+ 
+
