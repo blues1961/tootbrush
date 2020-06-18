@@ -1,6 +1,6 @@
 # enclosure pour brosse à dents avec OpenSCAD
 
-#paramètres généraux de l'enclosure
+# paramètres généraux de l'enclosure
 
 mesure de l'intérieur la boite
 
@@ -14,7 +14,7 @@ epbas=3;         // épaisseur dessous enclosure
 
 precision=1      //espace entre l'intérieur de l'enclosure du haut et l'extérieur de l'enclosure du bas
 
-#paramètres spécifiques pour l'enclosure de la brosse à dents
+# paramètres spécifiques pour l'enclosure de la brosse à dents
 
 ouverture=8;     // ouverture pour le manche de la brosse
 texte="Étienne"  // personnalisation de l'enclosure de la brosse a dent
