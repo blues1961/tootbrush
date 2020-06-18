@@ -1,22 +1,25 @@
-# tootbrush
+# enclosure pour brosse à dents avec OpenSCAD
 
-# interieur de la boite
+#paramètres généraux de l'enclosure
 
-# longueur=35;     //longueur 
-# largeur=18;      //largeur 
-# hauteur=18;      //hauteur
+mesure de l'intérieur la boite
 
-# epcote=3;        // epaisseur des cotes
-# ephaut=3;        //epaisseur dessus boite
-# epbas=3;         // epaisseur dessous boite
+longueur=35;     //longueur
+largeur=18;      //largeur
+hauteur=18;      //hauteur
 
-# precision=1      //espace entre interieur enclosure du haut et exterieur enclosure du bas 
+epcote=3;        // épaisseur des cotes
+ephaut=3;        //épaisseur dessus enclosure 
+epbas=3;         // épaisseur dessous enclosure 
 
-# ouverture=8;     // ouverture manche de brosse
+precision=1      //espace entre l'intérieur de l'enclosure du haut et l'extérieur de l'enclosure du bas
 
-# texte="Charles"  // personnalisation de l'enclosure de la brosse a dent
+#paramètres spécifiques pour l'enclosure de la brosse à dents
 
-# placer enclosure.scad dans la librairie de openSCAD
+ouverture=8;     // ouverture pour le manche de la brosse
+texte="Étienne"  // personnalisation de l'enclosure de la brosse a dent
 
- 
 
+Le module enclosure.scad doit être déplacé dans la  librairie d'OpenSCAD.
+
+Sous Linux: ~/.local/share/OpenSCAD/libraries
