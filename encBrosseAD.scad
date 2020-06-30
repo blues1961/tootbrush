@@ -19,19 +19,23 @@ encPct=0.50;  // poucentage de la hauteur de la boite a couvrir par l'enclosure 
 
 ou = 8;  // ouverture pour laisser passer le manche de la brosse
 
+tophole = true;
+
 enclosureBAD_bas();
-translate([longueur+4*epcote+5,0,0])enclosureBAD_haut();
+translate([longueur+4*epcote+5,0,0])enclosureBAD_haut(tophole);
 
 /*
   enclosure haut - ajout ouverture manche brosse & prenom
 */
 
-module enclosureBAD_haut(){
+module enclosureBAD_haut(tophole){
         difference(){
            enclosure_haut(longueur,largeur,hauteur,epcote,epbas,ephaut,precision,encPct);
            translate([longueur/2,(largeur-ou)/2,(hauteur/2+ephaut-ou/2)]) cube(longueur,ou,ou+hauteur,0);
            translate([-longueur/2,0,hauteur/2+ephaut])rotate([0,90,0])cylinder(h = longueur, r=2,$fn=60, center = true);
-           translate([0,0,0])rotate([0,0,0])cylinder(h = longueur, r=2,$fn=60, center = true);
+            if (tophole==true) {
+               translate([0,0,0])rotate([0,0,0])cylinder(h = longueur, r=2,$fn=60, center = true);
+            }
            translate([0,0,largeur/2+epcote])rotate([90,0,0])cylinder(h = longueur, r=2,$fn=60, center = true);
         }
           
